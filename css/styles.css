@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Trade Winds", cursive;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid royalblue;
+  margin: 3% 2%;
+  color: #333;
+}
+
+#img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  width: 30%;
+  margin: 1.66%;
+  min-width: 350px;
+  border-radius: 15px;
+  transition: transform 0.8s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/*********************************** Media Queries *********************************/
+@media (max-width: 960px) {
+  h1 {
+    margin: 3%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+}
